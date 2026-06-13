@@ -1,48 +1,31 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="lofi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astrolabo</title>
-    <style>
-        /* Reset et centrage parfait */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen flex items-center justify-center overflow-hidden bg-slate-50" 
+      style="background-image: 
+        radial-gradient(at 0% 0%, rgba(219, 234, 254, 0.6) 0px, transparent 50%), 
+        radial-gradient(at 100% 0%, rgba(243, 232, 255, 0.6) 0px, transparent 50%), 
+        radial-gradient(at 50% 100%, rgba(224, 242, 254, 0.5) 0px, transparent 50%);">
 
-        body {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            color: #1e293b; /* Bleu-gris très foncé et doux pour le texte */
-            
-            /* Fond "Espace Clair" : Dégradé de nébuleuses pastel */
-            background-color: #f8fafc;
-            background-image: 
-                radial-gradient(at 0% 0%, rgba(219, 234, 254, 0.6) 0px, transparent 50%),   /* Bleu ciel */
-                radial-gradient(at 100% 0%, rgba(243, 232, 255, 0.6) 0px, transparent 50%), /* Violet aube */
-                radial-gradient(at 50% 100%, rgba(224, 242, 254, 0.5) 0px, transparent 50%);/* Éclat polaire */
-            
-            overflow: hidden;
-        }
+    <div class="text-center p-10 animate-fade-in animate-duration-1000">
+        
+        <h1 class="text-5xl md:text-6xl font-light tracking-[0.2em] uppercase bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-purple-700 mb-4 select-none">
+            Astrolabo
+        </h1>
+        
+        <p class="text-sm md:text-base tracking-[0.3em] uppercase text-slate-500 font-medium pl-[0.3em]">
+            Digital Cloud
+        </p>
+        
+        <div class="divider w-12 mx-auto before:bg-purple-300 after:bg-purple-300 opacity-50 mt-6"></div>
+        
+    </div>
 
-        /* Conteneur principal minimaliste */
-        .card {
-            text-align: center;
-            padding: 40px;
-            animation: fadeIn 1.5s ease-out;
-        }
-
-        /* Nom de la marque avec un effet d'espacement élégant */
-        h1 {
-            font-size: 3.5rem;
-            font-weight: 300;
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-            background: linear-gradient(135deg, #1e40af, #6b21a8); /* Dégradé discret bleu/violet sur le texte */
-            -webkit-background-clip: text;
-            -webkit-text-fill
+</body>
+</html>
